@@ -1158,3 +1158,11 @@ throw new Error('AdminLTE requires jQuery')
     Plugin.call($('body'));
   });
 }(jQuery);
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

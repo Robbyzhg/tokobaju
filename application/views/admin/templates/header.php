@@ -338,6 +338,31 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Top</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Jewerly</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Glasses</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Scarf</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dress</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
