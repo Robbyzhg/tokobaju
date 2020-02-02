@@ -30,11 +30,12 @@
 	<!-- Navigation -->
 	<div class="menu_nav">
 		<ul>
-			<li><a href="#">Women</a></li>
-			<li><a href="#">Men</a></li>
-			<li><a href="#">Kids</a></li>
-			<li><a href="#">Home Deco</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="category">All</a></li>
+			<li><a href="#">Dress</a></li>
+			<li><a href="#">Top</a></li>
+			<li><a href="#">Jewerly</a></li>
+			<li><a href="#">Scarf</a></li>
+			<li><a href="#">Glasses</a></li>
 		</ul>
 	</div>
 	<!-- Contact Info -->
