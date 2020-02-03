@@ -31,11 +31,11 @@
 	<div class="menu_nav">
 		<ul>
 			<li><a href="category">All</a></li>
-			<li><a href="#">Dress</a></li>
-			<li><a href="#">Top</a></li>
-			<li><a href="#">Jewerly</a></li>
-			<li><a href="#">Scarf</a></li>
-			<li><a href="#">Glasses</a></li>
+			<li><a href="dress">Dress</a></li>
+			<li><a href="top">Top</a></li>
+			<li><a href="jewerly">Jewerly</a></li>
+			<li><a href="scarf">Scarf</a></li>
+			<li><a href="glasses">Glasses</a></li>
 		</ul>
 	</div>
 	<!-- Contact Info -->

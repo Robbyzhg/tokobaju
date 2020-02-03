@@ -1,4 +1,3 @@
-		
 <h1>asd</h1>
 <br>
 <div class="row products_row products_container grid">
@@ -35,6 +34,3 @@
 	</div>
 		<?php endforeach; ?>
 </div>
-		
-
-
