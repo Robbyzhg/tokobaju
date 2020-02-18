@@ -8,11 +8,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>styles/bootstrap-4.1.2/bootstrap.min.css">
 <link href="<?php echo base_url('assets/') ?>plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>styles/responsive.css">
 </head>
 <body>
 
@@ -24,24 +24,25 @@
 	<div class="menu_search">
 		<form action="#" id="menu_search_form" class="menu_search_form">
 			<input type="text" class="search_input" placeholder="Search Item" required="required">
-			<button class="menu_search_button"><img src="images/search.png" alt=""></button>
+			<button class="menu_search_button"><img src="<?= base_url('assets/images/search.png') ?>"></button>
 		</form>
 	</div>
 	<!-- Navigation -->
 	<div class="menu_nav">
 		<ul>
-			<li><a href="category">All</a></li>
-			<li><a href="dress">Dress</a></li>
-			<li><a href="top">Top</a></li>
-			<li><a href="jewerly">Jewerly</a></li>
-			<li><a href="scarf">Scarf</a></li>
-			<li><a href="glasses">Glasses</a></li>
+			<li><a href="<?= base_url('category') ?>">All</a></li>
+			<li><a href="<?= base_url('category/index/dress') ?>">Dress</a></li>
+			<li><a href="<?= base_url('category/index/top') ?>">Top</a></li>
+			<li><a href="<?= base_url('category/index/jewelry') ?>">Jewerly</a></li>
+			<li><a href="<?= base_url('category/index/scarf') ?>">Scarf</a></li>
+			<li><a href="<?= base_url('category/index/glasses') ?>">Glasses</a></li>
+			<li><a href="<?= base_url('arrived') ?>">Konfirmasi Pesanan Sampai</a></li>
 		</ul>
 	</div>
 	<!-- Contact Info -->
 	<div class="menu_contact">
 		<div class="menu_phone d-flex flex-row align-items-center justify-content-start">
-			<div><div><img src="images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
+			<div><div><img src="assets/images/phone.svg"></div></div>
 			<div>+1 912-252-7350</div>
 		</div>
 		<div class="menu_social">
@@ -65,37 +66,26 @@
 			<div class="logo">
 				<a href="home">
 					<div class="d-flex flex-row align-items-center justify-content-start">
-						<div><img src="images/logo_1.png" alt=""></div>
-						<div>Little Closet</div>
+						<div><img height="50" width="auto" src="<?= base_url('assets/images/trecora.png') ?>">
+						</div>
+						<div>TRECORA</div>
 					</div>
 				</a>	
 			</div>
 			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
-			<nav class="main_nav">
-				<ul class="d-flex flex-row align-items-start justify-content-start">
-					<li class="active"><a href="#">Women</a></li>
-					<li><a href="#">Men</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">Home Deco</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
 			<div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
 				<!-- Search -->
 				<div class="header_search">
 					<form action="#" id="header_search_form">
 						<input type="text" class="search_input" placeholder="Search Item" required="required">
-						<button class="header_search_button"><img src="images/search.png" alt=""></button>
+						<button class="header_search_button"><img src="assets/images/search.png"></button>
 					</form>
 				</div>
-				<!-- User -->
-				<div class="user"><a href="#"><div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik"><div>1</div></div></a></div>
 				<!-- Cart -->
-				<div class="cart"><a href="cart"><div><img class="svg" src="images/cart.svg" alt="https://www.flaticon.com/authors/freepik"></div></a></div>
+				<div class="cart"><a href="cart"><div><img class="svg" src="assets/images/cart.svg"></div></a></div>
 				<!-- Phone -->
 				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
-					<div><div><img src="images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div></div>
-					<div>+1 912-252-7350</div>
+					<div><a class="btn btn-danger" href="<?= base_url("register/logout") ?>">Logout</a></div>
 				</div>
 			</div>
 		</div>

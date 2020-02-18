@@ -1,4 +1,11 @@
-		
+<style>
+	.product_name{
+		color: black;
+	}
+	.product_category{
+		color: black;
+	}
+</style>		
 <h1>asd</h1>
 <br>
 <div class="row products_row products_container grid">
@@ -6,12 +13,12 @@
 		<?php foreach($product as $product) : ?>
 	<div class="col-xl-4 col-md-6 grid-item new">
 			<div class="product">
-				<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+				<div class="product_image text-center"><img height="500" width="auto" src="<?= base_url("assets/product/$product->gambar_product")?>" alt=""></div>
 					<div class="product_content">
 						<div class="product_info d-flex flex-row align-items-start justify-content-start">
 							<div>
 								<div>
-									<div class="product_name"><a href="product.html"><?= $product->nama_product ?></a></div>
+									<div class="product_name"><?= $product->nama_product ?></div>
 									<div class="product_category"><?= $product->deskripsi ?></div>
 								</div>
 							</div>
@@ -21,12 +28,17 @@
 						</div>
 					</div>
 			<div class="product_buttons">
-				<div class="text-right d-flex flex-row align-items-start justify-content-start">
-					<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
-						<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+				<div class="text-center align-items-center justify-content-center">
+			<div class="product_button product_cart text-center d-flex align-items-center justify-content-center">
+				<div>
+					<div>
+					<a href="<?= base_url('cart/add_to_cart/'.$this->session->id_users.'/'.$product->id_product)?>">
+							<img src="assets/images/cart.svg" class="svg">
+						</a>
+					<div>
+				</div>
+				</div>
 					</div>
-			<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-			<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
 						</div>
 					</div>
 				</div>

@@ -4,10 +4,7 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
+      <h1>Form Input</h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
@@ -22,22 +19,62 @@
         <section class="col-lg-7 connectedSortable">
           
         <div class="container-fluid">
-          <div class="row">
-            <?php foreach($product as $product) : ?>
-              <div class="card" style="width: 16rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"> <?php echo $product->nama_product ?> </h5>
-                  <p class="card-text"><?= $product->deskripsi ?></p>
-                  <span class="badge badge-success">Rp. <?= $product->harga_product ?></span>
-                  <br>
-                  <a href="#" class="btn btn-primary">Tambah ke keranjang</a>
-                </div>
-              </div>
-            <?php endforeach; ?>
-          </div>
+          <form action=" <?= base_url('Admin/tambah') ?>" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label>Nama Product : </label>
+              <input class="form-control" type="text" name="nama_product">
+            </div>
+            <div class="form-group">
+              <label>Harga Product : </label>
+              <input class="form-control" type="text" name="harga_product">
+            </div>
+            <div class="form-group">
+              <label>Deskripsi Product : </label>
+              <input class="form-control" type="text" name="deskripsi">
+            </div>
+            <div>
+              <label>Kategori Barang : </label>
+              <select class="form-control" name="kategori">
+                <option>-</option>
+                <option value="scarf">Scarf</option>
+                <option value="dress">Dress</option>
+                <option value="glasses">Glasses</option>
+                <option value="jewelry">Jewelry</option>
+                <option value="top">Top</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Input Gambar : </label>
+              <input class="form-control" type="file" name="gambar_product">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </div>
+          </form>
         </div>
-
+        <hr>
+<table border="2" class="text-center table1" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nama Product</th>
+      <th>Harga Product</th>
+      <th>Kategori</th>
+      <th>Gambar</th>
+      <th>Aksi</th>
+    </tr>
+    <?php foreach($product as $product) : ?>
+      <tr>
+        <td><?= $product->nama_product ?></td>
+        <td><?= $product->harga_product ?></td>
+        <td><?= $product->kategori ?></td>
+        <td><img height="100" width="auto" src="<?= base_url("assets/product/$product->gambar_product")?>"></td>
+        <td>
+          <a class="btn btn-danger" href="<?= base_url("Admin/hapus/$product->id_product") ?>">DELETE</a>
+        </td>
+      </tr>
+    <?php endforeach; ?>
+  </thead>
+</table>
         </section>
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->
