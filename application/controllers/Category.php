@@ -12,4 +12,12 @@ class category extends CI_Controller {
 		$this->load->view('home/category', $data);
 		$this->load->view('home/templates/footer');
 	}
+
+	public function search()
+	{
+		$data['product'] = $this->model_product->search($this->input->post("keyword"),true)->result();
+		$this->load->view('home/templates/header');
+		$this->load->view('home/category', $data);
+		$this->load->view('home/templates/footer');
+	}
 }

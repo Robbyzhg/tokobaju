@@ -14,4 +14,10 @@ class Model_product extends CI_Model {
      {
      	return $this->db->insert('product', $product);
      }
+
+     public function search($keyword)
+     {
+          $this->db->like("nama_product",$keyword);
+          return $this->db->get("product");
+     }
 }

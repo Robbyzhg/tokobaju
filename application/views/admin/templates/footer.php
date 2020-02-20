@@ -3,7 +3,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.18
     </div>
-    <strong>Copyright &copy; 2020 <a href="https://adminlte.io">Trecora</a>.</strong> All rights
+    <strong>Copyright &copy; 2020 <a href="https://adminlte.io">Robby Zhang</a>.</strong> All rights
     reserved.
   </footer>
 

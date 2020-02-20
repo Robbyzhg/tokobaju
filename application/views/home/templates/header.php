@@ -22,9 +22,9 @@
 
 	<!-- Search -->
 	<div class="menu_search">
-		<form action="#" id="menu_search_form" class="menu_search_form">
+		<form action="<?= base_url('category/search') ?>" id="menu_search_form" class="menu_search_form" method="post">
 			<input type="text" class="search_input" placeholder="Search Item" required="required">
-			<button class="menu_search_button"><img src="<?= base_url('assets/images/search.png') ?>"></button>
+			<button type="submit" class="menu_search_button"><img src="<?= base_url('assets/images/search.png') ?>"></button>
 		</form>
 	</div>
 	<!-- Navigation -->
@@ -64,7 +64,7 @@
 		<div class="header_overlay"></div>
 		<div class="header_content d-flex flex-row align-items-center justify-content-start">
 			<div class="logo">
-				<a href="home">
+				<a href="<?= base_url('home') ?>">
 					<div class="d-flex flex-row align-items-center justify-content-start">
 						<div><img height="50" width="auto" src="<?= base_url('assets/images/trecora.png') ?>">
 						</div>
@@ -75,12 +75,10 @@
 			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 			<div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
 				<!-- Search -->
-				<div class="header_search">
-					<form action="#" id="header_search_form">
-						<input type="text" class="search_input" placeholder="Search Item" required="required">
-						<button class="header_search_button"><img src="assets/images/search.png"></button>
-					</form>
-				</div>
+				<form action="<?= base_url('category/search') ?>" id="menu_search_form" class="menu_search_form" method="post">
+					<input type="text" name="keyword" class="search_input" placeholder="Search Item" required="required">
+					<button type="submit" class="menu_search_button"><img src="<?= base_url('assets/images/search.png') ?>"></button>
+				</form>
 				<!-- Cart -->
 				<div class="cart"><a href="cart"><div><img class="svg" src="assets/images/cart.svg"></div></a></div>
 				<!-- Phone -->
