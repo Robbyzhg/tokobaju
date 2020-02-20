@@ -2,7 +2,8 @@
 
 class Home extends CI_Controller {
 
-	function __construct(){
+	function __construct()
+	{
 		parent::__construct();
 		if (!($this->session->status=='login')) {
 			redirect(base_url('register'));

@@ -1,4 +1,3 @@
-  
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -53,28 +52,31 @@
           </form>
         </div>
         <hr>
-<table border="2" class="text-center table1" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Nama Product</th>
-      <th>Harga Product</th>
-      <th>Kategori</th>
-      <th>Gambar</th>
-      <th>Aksi</th>
-    </tr>
-    <?php foreach($product as $product) : ?>
-      <tr>
-        <td><?= $product->nama_product ?></td>
-        <td><?= $product->harga_product ?></td>
-        <td><?= $product->kategori ?></td>
-        <td><img height="100" width="auto" src="<?= base_url("assets/product/$product->gambar_product")?>"></td>
-        <td>
-          <a class="btn btn-danger" href="<?= base_url("Admin/hapus/$product->id_product") ?>">DELETE</a>
-        </td>
-      </tr>
-    <?php endforeach; ?>
-  </thead>
-</table>
+
+        <div class="table-responsive">
+          <table border="3" class="table table-bordered table-striped text-center">
+            <?php foreach($product as $product) : ?>
+            <tbody>
+              <tr>
+                <td width="50px;"><?= $product->nama_product ?></td>
+                <td width="50px;"><?= $product->harga_product ?></td>
+                <td width="50px;"><?= $product->kategori ?></td>
+                <td width="50px;"><img height="100" width="auto" src="<?= base_url("assets/product/$product->gambar_product")?>"></td>
+                <td width="50px;">
+                  <a class="btn btn-danger" href="<?= base_url("Admin/hapus/$product->id_product") ?>">DELETE</a>
+                </td>
+              </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+
+        
+        
+ 
+        
+
+
         </section>
         <!-- /.Left col -->
         <!-- right col (We are only adding the ID to make the widgets sortable)-->

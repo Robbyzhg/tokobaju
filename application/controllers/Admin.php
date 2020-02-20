@@ -2,9 +2,12 @@
 
 class Admin extends CI_Controller {
 
-	public function __construct()
+	function __construct()
 	{
 		parent::__construct();
+		if (!($this->session->status=='login')) {
+			redirect(base_url('registeradmin'));
+		}
 		$this->load->model('Model_product'); 
 	}
 

@@ -1,6 +1,3 @@
-<?php  
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,9 +92,9 @@ label {
 <body>
 <div id="card">
 	<div id="card-title">
-		<h2>Login</h2>
+		<h2>Login Admin</h2>
 	</div>
-	<form action="<?= base_url("register/aksi_login") ?>" method="post">
+	<form action="<?= base_url("registeradmin/aksi_login") ?>" method="post">
 		<label for="username" style="padding-top:13px"></label>
   <input  
   placeholder="username"
@@ -114,11 +111,9 @@ label {
   name="password"
   required />
   <div class="form-border"></div>
-<a href="#"><legend id="forgot-pass">Forgot password?</legend></a>
 <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
 	</form>
 <br><br>
-<a href="<?= base_url('register/daftar') ?>" id="signup">Don't have account yet?</a>
 </div>
 </body>
 </html>
