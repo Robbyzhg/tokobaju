@@ -1,11 +1,11 @@
-<style>
-	.product_buttons{
-		width: 100px;
-		height: 50px;
-		padding-left: 20px;
-		margin-left: 10px;
-	}
-</style>
+	<style>
+		.product_buttons{
+			width: 100px;
+			height: 50px;
+			padding-left: 20px;
+			margin-left: 10px;
+		}
+	</style>
 
 
 
@@ -27,47 +27,23 @@
 			<div class="col fill_height">
 				<div class="home_container d-flex flex-column align-items-center justify-content-start">
 					<div class="home_content">
-						<div class="home_title">New Arrivals</div>
-						<div class="home_subtitle">Summer Wear</div>
 						<div class="home_items">
 							<div class="row">
 								<div class="col-sm-3 offset-lg-1">
 									<div class="home_item_side"><a href="product.html">
-										<img src="assets/images/home_1.jpg"></a></div>
+										<img src=""></a></div>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
 									<div class="product home_item_large">
-										<div class="product_tag d-flex flex-column align-items-center justify-content-center">
-											
+										<div class=" flex-column align-items-center justify-content-center">
 										</div>
-										<div class="product_image"><img src="assets/images/home_2.jpg"></div>
-										<div class="product_content">
-											<div class="product_info d-flex flex-row align-items-start justify-content-start">
-												<div>
-													<div>
-														<div class="product_name"><a href="product.html">Cool Clothing with Brown Stripes</a></div>
-														<div class="product_category">In <a href="category.php">Category</a></div>
-													</div>
-												</div>
-												<div class="ml-auto text-right">
-													<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
-												</div>
-											</div>
-											<div class="product_buttons">
-												<div class="text-right d-flex flex-row align-items-start justify-content-start">
-													<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
-														<div><div><img src="assets/images/heart.svg" alt=""><div>+</div></div></div>
-													</div>
-													<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
-														<div><div><img src="images/cart_2.svg" alt=""><div>+</div></div></div>
-													</div>
-												</div>
+										<div class="product_image"><img src="assets/images/trecora.png"></div>		
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="home_item_side"><a href="product.php"><img src="assets/images/home_3.jpg" alt=""></a></div>
+									<div class="home_item_side"><a href="product.php"><img src=""></a></div>
 								</div>
 							</div>
 						</div>

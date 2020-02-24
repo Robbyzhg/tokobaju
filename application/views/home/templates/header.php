@@ -15,7 +15,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/') ?>styles/responsive.css">
 </head>
 <body>
-
 <!-- Menu -->
 
 <div class="menu">
@@ -31,11 +30,9 @@
 	<div class="menu_nav">
 		<ul>
 			<li><a href="<?= base_url('category') ?>">All</a></li>
-			<li><a href="<?= base_url('category/index/dress') ?>">Dress</a></li>
 			<li><a href="<?= base_url('category/index/top') ?>">Top</a></li>
 			<li><a href="<?= base_url('category/index/jewelry') ?>">Jewerly</a></li>
 			<li><a href="<?= base_url('category/index/scarf') ?>">Scarf</a></li>
-			<li><a href="<?= base_url('category/index/glasses') ?>">Glasses</a></li>
 			<li><a href="<?= base_url('arrived') ?>">Konfirmasi Pesanan Sampai</a></li>
 		</ul>
 	</div>
@@ -68,7 +65,7 @@
 					<div class="d-flex flex-row align-items-center justify-content-start">
 						<div><img height="50" width="auto" src="<?= base_url('assets/images/trecora.png') ?>">
 						</div>
-						<div>TRECORA</div>
+						<div class="header-name">TRECORA</div>
 					</div>
 				</a>	
 			</div>
