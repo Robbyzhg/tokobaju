@@ -31,7 +31,7 @@
 		<ul>
 			<li><a href="<?= base_url('category') ?>">All</a></li>
 			<li><a href="<?= base_url('category/index/top') ?>">Top</a></li>
-			<li><a href="<?= base_url('category/index/jewelry') ?>">Jewerly</a></li>
+			<li><a href="<?= base_url('category/index/jewelry') ?>">Organic Lip Oil</a></li>
 			<li><a href="<?= base_url('category/index/scarf') ?>">Scarf</a></li>
 			<li><a href="<?= base_url('arrived') ?>">Konfirmasi Pesanan Sampai</a></li>
 		</ul>
@@ -40,7 +40,7 @@
 	<div class="menu_contact">
 		<div class="menu_phone d-flex flex-row align-items-center justify-content-start">
 			<div><div><img src="assets/images/phone.svg"></div></div>
-			<div>+1 912-252-7350</div>
+			<div>+62 823-844-586-13</div>
 		</div>
 		<div class="menu_social">
 			<ul class="menu_social_list d-flex flex-row align-items-start justify-content-start">

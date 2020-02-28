@@ -36,7 +36,7 @@
               <select class="form-control" name="kategori">
                 <option>-</option>
                 <option value="scarf">Scarf</option>
-                <option value="jewelry">Jewelry</option>
+                <option value="jewelry">Organic Lip Oil</option>
                 <option value="top">Top</option>
               </select>
             </div>
